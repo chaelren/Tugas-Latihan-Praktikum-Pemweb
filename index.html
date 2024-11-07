@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Perpustakaan FTI ITERA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Formulir Pendaftaran Perpustakaan FTI ITERA</h2>
+
+     <!-- Teks Berjalan sebagai Pengumuman Selamat Datang -->
+    <div class="teksJalan">
+        <marquee behavior="" direction=""><p>Selamat Datang di Formulir Pendaftaran Perpustakaan FTI ITERA</p></marquee>
+    </div>
+    <form id="registrationForm">
+
+        <!-- Input untuk Nama Lengkap -->
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" id="nama" name="nama" required>
+        <div id="namaError" class="error"></div>
+
+        <!-- Input untuk NIM -->
+        <label for="nim">NIM</label>
+        <input type="text" id="nim" name="nim" required>
+        <div id="nimError" class="error"></div>
+
+        <!-- Dropdown untuk Program Studi -->
+        <label for="programStudi">Program Studi</label>
+        <select id="programStudi" name="programStudi" required>
+            <option value="" disabled selected>Pilih Program Studi</option>
+            <option>Rekayasa Instrumentasi dan Automasi</option>
+            <option>Rekayasa Kehutanan</option>
+            <option>Rekayasa Keolahragaan</option>
+            <option>Rekayasa Kosmetik</option>
+            <option>Rekayasa Minyak dan Gas</option>
+            <option>Teknik Biomedis</option>
+            <option>Teknik Biosistem</option>
+            <option>Teknik Elektro</option>
+            <option>Teknik Fisika</option>
+            <option>Teknik Geofisika</option>
+            <option>Teknologi Industri Pertanian</option>
+            <option>Teknik Telekomunikasi</option>
+            <option>Teknik Sistem Energi</option>
+            <option>Teknik Pertambangan</option>
+            <option>Teknik Mesin</option>
+            <option>Teknik Material</option>
+            <option>Teknik Kimia</option>
+            <option>Teknik Informatika</option>
+            <option>Teknik Industri</option>
+            <option>Teknik Geologi</option>
+            <option>Teknologi Pangan</option>
+        </select>
+        <div id="programStudiError" class="error"></div>
+
+        <!-- Input untuk Username -->
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+        <div id="usernameError" class="error"></div>
+        <div id="usernameValid" class="valid"></div>
+
+        <!-- Input untuk Email -->
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <div id="emailError" class="error"></div>
+
+        <!-- Input untuk Password -->
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+        <div id="passwordError" class="error"></div>
+        <div id="passwordStrength" class="strength"></div>
+
+        <!-- Input untuk Konfirmasi Password -->
+        <label for="confirmPassword">Konfirmasi Password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+        <div id="confirmPasswordError" class="error"></div>
+
+        <button type="submit">Daftar</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
